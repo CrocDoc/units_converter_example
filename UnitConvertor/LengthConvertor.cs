@@ -4,8 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Clear up usings
+
 namespace UnitConvertor
 {
+    /// <summary>
+    /// Should be inheriting from an interface instead of an abstract class as mentioned in Units.cs class.
+    /// </summary>
+
     public class LengthConvertor : Units // Inherting Unit Abstract Base class to implement UnitConversion method 
     {
         public override string UnitConversion(string from, string to)
