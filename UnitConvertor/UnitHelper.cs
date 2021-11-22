@@ -46,6 +46,7 @@ namespace UnitConvertor
 
         /// <summary>
         /// No need for this if the input has separated value and unit
+        /// 
         /// </summary>
         /// <returns></returns>
 
@@ -92,7 +93,7 @@ namespace UnitConvertor
         }
 
         /// <summary>
-        /// No need for this if the input has separated value and unit
+        /// Already implemented in .NET as string.Contains()
         /// Naming doesn't make sense as return type is bool
         /// Inconsistent method naming
         /// </summary>
@@ -127,8 +128,17 @@ namespace UnitConvertor
         }
 
         /// <summary>
-        /// No need for this if the input has separated value and unit
+        /// Logic of separating digit value and unit can be removed in case where user inputs these values separately
+        /// 
+        /// In this case, the list of units is smaller than list of prefixes. 
+        /// I'd use foreach with string.Contain() to iterate through BaseUnits, find the matching value and then split the string.
+        /// Finding the prefix can be then done with FirstOrDefault() method on the list with the splitted string. 
+        /// 
+        /// Should have clearly stated output and not return input as output.
+        /// 
         /// Inconsistent method naming
+        /// 
+        /// Can return object class with defined prefix and unit parameters, to avoid redundancy further up the program.
         /// </summary>
         /// <returns></returns>
 

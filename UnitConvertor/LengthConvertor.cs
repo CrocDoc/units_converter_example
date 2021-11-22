@@ -14,6 +14,13 @@ namespace UnitConvertor
 
     public class LengthConvertor : Units // Inherting Unit Abstract Base class to implement UnitConversion method 
     {
+
+        /// <summary>
+        /// No need to do parsing again if inputs are parsed at UnitsFactory
+        /// Should have better naming as this suggests this is a class, not a method.
+        /// I would use 
+        /// </summary>
+
         public override string UnitConversion(string from, string to)
         {
             

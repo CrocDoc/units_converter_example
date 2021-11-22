@@ -18,7 +18,7 @@ namespace UnitConvertor
     {      
         /// <summary>
         /// Rename from Convertor to something more fitting. Method shouldn't be named as a class.
-        /// UnitHelper.getBaseUnit shouldn't be used in case where the input has value and unit to convert separated.
+        /// Missing parsing of "to" parameter
         /// </summary>
         /// <returns></returns>
 
