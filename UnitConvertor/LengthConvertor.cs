@@ -18,7 +18,6 @@ namespace UnitConvertor
         /// <summary>
         /// No need to do parsing again if inputs are parsed at UnitsFactory
         /// Should have better naming as this suggests this is a class, not a method.
-        /// I would use 
         /// </summary>
 
         public override string UnitConversion(string from, string to)
